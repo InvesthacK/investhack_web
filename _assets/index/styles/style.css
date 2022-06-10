@@ -1,0 +1,761 @@
+/* ==================== */
+/* 　　　　　FV　　　　　　 */
+/* ==================== */
+.fv {
+    background-color: transparent;
+    background-image: url(../images/fv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+}
+
+/* ==================== */
+/* 　　　　intro　　　　　 */
+/* ==================== */
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #fff;
+    background-image: url(../images/h2_investhack_pc.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 0 left 10.5vw;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    padding: 0 15vw;
+}
+
+.intro .intro_text {
+    width: 505px;
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 2.5s;
+}
+
+.intro .is-show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.intro .intro_text h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 7%;
+}
+
+.intro .intro_text p {
+    line-height: 2.45;
+}
+
+@media screen and (max-width: 1023px) {
+    .intro {
+        background-image: url(../images/h2_investhack_pc.svg);
+        background-size: contain;
+        background-position: top 0 left 0vw;
+        padding: 0px 5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+
+/* ==================== */
+/* 　　　products　　　　 */
+/* ==================== */
+.products {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+    background-color: #0050B3;
+    color: #fff;
+    background-image: url("../images/h2_products_01_pc.svg");
+    background-size: 33vh auto;
+    background-repeat: no-repeat;
+    background-position: top 0 left 5vw;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    padding: 0 15vw;
+}
+
+.products section {
+    width: 65%;
+    max-width: 680px;
+}
+
+.products section h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 10%;
+}
+
+.products section h2:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #fff;
+}
+
+.products h2 span {
+    position: relative;
+    padding: 0 5%;
+    background-color: #0050B3;
+}
+
+.products ul {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.products ul li {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: calc(33.3% - 10px);
+    padding: 14% 0 14% 0;
+}
+
+
+.products li:first-of-type {
+    background-image: url("../images/products_web.png");
+}
+
+.products li:nth-of-type(2) {
+    background-image: url("../images/products_web.png");
+}
+
+.products li:last-of-type {
+    background-image: url("../images/products_web.png");
+}
+
+.products ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    background: #99C0F0;
+    /* background: linear-gradient(to bottom, #97ABFF 0 0%, #123597 50%); */
+    /* transition: all 0.5s ease; */
+}
+
+.products ul li a:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: #000;
+}
+
+.products li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.products li p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    width: 100%;
+    z-index: 10;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.8));
+}
+
+
+@media screen and (max-width: 1023px) {
+    .products {
+        justify-content: center;
+        flex-direction: initial;
+        background-position: top 0 left 0vw;
+        padding: 0 5vw;
+    }
+    
+    .products li p {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products {
+        height: 50vh;
+    }
+
+
+}
+
+
+/* ==================== */
+/* 　　　　Web制作　　　　 */
+/* ==================== */
+
+.products_web {
+    background-image: url(../images/h2_products_02_pc.svg);
+    background-size: 33vh auto;
+    background-repeat: no-repeat;
+    background-position: top 0 left 5vw;
+    background-attachment: fixed;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 15vw;
+}
+
+.products_web .products_web_text {
+    position: relative;
+    min-width: 580px;
+}
+
+.products_web section h3 {
+    position: relative;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.2rem;
+    margin-bottom: 7.5%;
+}
+
+
+.products_web section h3:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 34%;
+    width: 66%;
+    height: 2px;
+    content: '';
+    background-color: #0050B3;
+}
+
+.products_web section h3 span {
+    position: relative;
+    padding-right: 65%;
+}
+
+
+.products_web section h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3.5%;
+}
+
+.products_web h4 span {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+}
+
+.products_web section p {
+    line-height: 2.3;
+}
+
+.products_web section p:nth-last-of-type(1) {
+    margin-bottom: 9.5%;
+}
+
+.products_web .products_web_text div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.products_web section .price_btn,
+main .products_web section .contact_btn {
+    width: 180px;
+    margin-bottom: 0;
+}
+
+.products_web .products_web_text picture {
+    position: absolute;
+    top: 9%;
+    left: -50%;
+    width: 59%;
+    z-index: -10;
+}
+
+#price_list_web_open {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+}
+
+#price_list_web_open #price_list_web_close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+}
+
+#price_list_web_close ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 950px;
+    z-index: 300;
+}
+
+#price_list_web_close ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #ECF4FD;
+    width: 25.5%;
+    min-width: 300px;
+    padding: 1.5% 2%;
+}
+
+#price_list_web_close ul li:nth-of-type(2),
+#price_list_web_close ul li:nth-of-type(2n+3) {
+    background-color: #CCDFF8;
+}
+
+#price_list_web_close ul li:nth-of-type(3n) {
+    background-color: #99C0F0;
+}
+
+#price_list_web_close ul section {
+    width: 100%;
+    margin: 0;
+}
+
+#price_list_web_close ul section p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+#price_list_web_close ul section p:nth-last-of-type(2) {
+    margin-bottom: 0;
+}
+
+#price_list_web_close ul li h5 {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+#price_list_web_close ul li div p:nth-last-of-type(2) {
+    display: inline;
+}
+
+#price_list_web_close ul li div p:last-of-type {
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+#price_list_web_close .price_attention {
+    text-align: left;
+    font-size: 1.1rem;
+    margin: 2rem auto 3rem;
+}
+
+#price_list_web_close .contact_btn {
+    margin: 0 auto;
+    width: 180px;
+}
+
+@media screen and (max-width: 1023px) {
+    .products_web {
+        justify-content: center;
+        flex-direction: initial;
+        background-position: top 0 left 0vw;
+        padding: 0 5vw;
+    }
+
+    .products_web .products_web_text picture {
+        display: none;
+    }
+
+    #price_list_web_close ul {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        min-width: initial;
+        width: 98vw;
+        max-width: 700px;
+        height: 75vh;
+    }
+
+    #price_list_web_close ul li {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+        width: 49%;
+        min-width: 230px;
+        height: 29%;
+        max-height: 185px;
+    }
+
+    #price_list_web_close .price_attention {
+        margin: 1rem auto 2rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {}
+
+/* ==================== */
+/* 　　　システム開発　　　 */
+/* ==================== */
+.products_system {
+    background-image: url(../images/h2_products_02_pc.svg);
+    background-size: 33vh auto;
+    background-repeat: no-repeat;
+    background-position: top 0 left 5vw;
+    background-attachment: fixed;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    padding: 0 15vw;
+}
+
+.products_system .products_system_text {
+    position: relative;
+    max-width: 580px;
+}
+
+.products_system h3 {
+    position: relative;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.2rem;
+    margin-bottom: 7.5%;
+}
+
+
+.products_system h3 :before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 53%;
+    width: 73%;
+    height: 2px;
+    content: '';
+    background-color: #0050B3;
+}
+
+.products_system h3 span {
+    position: relative;
+    padding-right: 41%;
+}
+
+
+.products_system section h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3.5%;
+}
+
+.products_system h4 span {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+}
+
+.products_system section p {
+    line-height: 2.3;
+}
+
+.products_system section p:nth-last-of-type(2) {
+    font-size: 1.2rem;
+    line-height: 3;
+    margin-bottom: 9.5%;
+}
+
+.products_system section .contact_btn {
+    margin: 0 0 0 auto;
+    width: 180px;
+}
+
+.products_system .products_system_text picture {
+    position: absolute;
+    top: 9%;
+    left: -50%;
+    width: 59%;
+    z-index: -10;
+}
+
+@media screen and (max-width: 1023px) {
+    .products_system {
+        justify-content: center;
+        flex-direction: initial;
+        background-position: top 0 left 0vw;
+        padding: 0 5vw;
+    }
+
+    .products_system .products_system_text picture {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+
+/* ==================== */
+/* 　　　 ITコンサル　　　 */
+/* ==================== */
+.products_consult {
+    background-image: url(../images/h2_products_02_pc.svg);
+    background-size: 33vh auto;
+    background-repeat: no-repeat;
+    background-position: top 0 left 5vw;
+    background-attachment: fixed;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    padding: 0 15vw;
+}
+
+.products_consult .products_consult_text {
+    position: relative;
+    max-width: 580px;
+}
+
+.products_consult h3 {
+    position: relative;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.2rem;
+    margin-bottom: 7.5%;
+}
+
+
+.products_consult h3 :before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 100%;
+    width: 60%;
+    height: 2px;
+    content: '';
+    background-color: #0050B3;
+}
+
+.products_consult h3 span {
+    position: relative;
+    padding-right: 4%;
+}
+
+
+.products_consult section h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3.5%;
+}
+
+.products_consult h4 span {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+}
+
+.products_consult section p {
+    line-height: 2.3;
+}
+
+.products_consult section p:nth-last-of-type(2) {
+    font-size: 1.2rem;
+    line-height: 3;
+    margin-bottom: 9.5%;
+}
+
+.products_consult section .contact_btn {
+    margin: 0 0 0 auto;
+    width: 180px;
+}
+
+.products_consult .products_consult_text picture {
+    position: absolute;
+    top: 9%;
+    left: -50%;
+    width: 59%;
+    z-index: -10;
+}
+
+@media screen and (max-width: 1023px) {
+    .products_consult {
+        justify-content: center;
+        flex-direction: initial;
+        background-position: top 0 left 0vw;
+        padding: 0 5vw;
+    }
+
+    .products_consult .products_consult_text picture {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+
+/* ==================== */
+/* 　　　　お問い合わせ　　 */
+/* ==================== */
+.contact {
+    background-image: url(../images/h2_contacts_pc.svg);
+    background-size: 33vh auto;
+    background-repeat: no-repeat;
+    background-position: top 0 left 5vw;
+    background-attachment: fixed;
+    background-color: #0050B3;
+    color: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    padding: 0 15vw;
+}
+
+.contact section {
+    width: 50%;
+    max-width: 580px;
+    margin: 0 0 0 auto;
+}
+
+.contact section h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 5%;
+}
+
+.contact section form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+}
+
+.contact section input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+.contact section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact section select {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+}
+
+.contact section label {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact section label span {
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: #999;
+}
+
+.contact section p {
+    margin-left: auto;
+    letter-spacing: 0.5rem;
+}
+
+.contact section p .submit {
+    background-color: #0050B3;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    width: 180px;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact section p .submit:hover {
+    background-color: #fff;
+    border: solid 1px #0050B3;
+    cursor: pointer;
+    color: #0050B3;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact section .note input {
+    height: 60px;
+}
+
+@media screen and (max-width: 1023px) {
+    .contact {
+        justify-content: center;
+        flex-direction: initial;
+        background-position: top 0 left 0vw;
+        padding: 0 5vw;
+    }
+
+    .contact section {
+        width: 100%;
+        max-width: 550px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {}
